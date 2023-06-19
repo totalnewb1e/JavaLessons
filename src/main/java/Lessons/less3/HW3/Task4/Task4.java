@@ -8,14 +8,18 @@ import java.util.Random;
  */
 public class Task4 {
     public static void main(String[] args) {
-        var list = new java.util.ArrayList<>(new Random().ints(0, 100).limit(11)
+        var list = new java.util.ArrayList<>(new Random().ints(0, 100).limit(10)
                 .boxed().toList());
         System.out.println(list);
         Collections.sort(list);
         System.out.println(list);
         System.out.println("min value = " + list.get(0));
         System.out.println("max value = " + list.get(list.size() - 1));
-        System.out.println("mid value = " + list.get(list.size() / 2));
+        if (list.size() % 2 == 0) {
+            System.out.println("mid value = " + list.get(list.size() / 2 -1));
+        } else {
+            System.out.println("mid value = " + list.get(list.size() / 2));
+        }
     }
 }
 
