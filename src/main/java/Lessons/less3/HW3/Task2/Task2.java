@@ -32,8 +32,6 @@ public class Task2 {
             if (goods.getSort().equals(userInput)) {
                 if (goods.getPrice() < cheapestPrice) {
                     cheapestPrice = goods.getPrice();
-                } else {
-                    cheapestPrice = (double) -1;
                 }
             }
         }
