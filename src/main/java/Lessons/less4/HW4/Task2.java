@@ -2,6 +2,10 @@ package Lessons.less4.HW4;
 
 import java.util.Stack;
 
+/**@apiNote Given a string s containing just the characters
+ * '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+ *
+ */
 public class Task2 {
     public static void main(String[] args) {
         validChars check = new validChars();
