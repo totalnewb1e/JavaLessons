@@ -3,6 +3,9 @@ package Lessons.less5.HW5;
 import java.util.HashMap;
 import java.util.Map;
 
+/**@apiNote Подсчитать количество вхождения каждого слова
+ *
+ */
 public class Task1 {
     public static void main(String[] args) {
         Map<String, Integer> map = new HashMap<>();
